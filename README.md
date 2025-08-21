@@ -59,8 +59,38 @@ Weighing Machines </br>
 
 ## CIRCUIT DIAGRAM
 
-## PROGRAM
+<img width="1214" height="848" alt="image" src="https://github.com/user-attachments/assets/30d59059-c98a-4069-af79-c04e1ead3851" />
 
+## PROGRAM
+```
+void setup() {
+  pinMode(13,OUTPUT);
+  pinMode(2,INPUT);
+
+}
+
+void loop() {
+  int status=digitalRead(2);
+  if(status==HIGH)
+  {
+    digitalWrite(13,HIGH);
+    delay(1000);
+    digitalWrite(13,LOW);
+    delay(1000);
+  }
+  else
+  {
+    digitalWrite(13,LOW);
+  }
+}
+
+```
 ## OUTPUT
+## SWITCH ON
+<img width="1028" height="726" alt="image" src="https://github.com/user-attachments/assets/06deb113-7c69-4f15-9962-d9d2bcb127e7" />
+## SWITCH OFF
+<img width="1027" height="720" alt="image" src="https://github.com/user-attachments/assets/589e18be-1764-438c-b0ac-eb78baa746c5" />
+
 
 ## RESULT
+Thus the program to design and implement a system for LED control using an Arduino microcontroller and a push button is executed successfully.
